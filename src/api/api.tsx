@@ -41,7 +41,7 @@ export const authApi = {
     }
 };
 
-export const usersApi = () => ({
+export const usersApi = {
 
     getUsers: (page: number, per_page: number) => {
         return getInstance()
@@ -51,5 +51,4 @@ export const usersApi = () => ({
                 throw response.data;
             });
     }
-
-});
+};
